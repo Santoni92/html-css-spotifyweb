@@ -117,19 +117,16 @@ main{
 }
 
 main nav ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
     list-style-type: none;
-    padding:0px 230px;
     margin-bottom: 3%;
 }
 
-main nav ul li{
-    display: inline-block;
-    margin-right:3%;
-    font-size: 15px;
-}
-
-main nav a{
+main nav ul li  a{
     text-decoration: none;
+    margin-right:20px;
 }
 
 main nav a:hover{

@@ -1,11 +1,24 @@
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1200px){
+    main nav ul li{
+        width:calc(100% / 5);
+        padding:15px;
+    }
+
     .locandina{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3%;
+    
     width:calc(100% / 4);
     }
+}
+
+@media screen and (max-width:1091px) {
+    main nav ul li{
+        width: calc(100% / 4);
+        padding:10px;
+    }    
+}
+
+@media screen and (max-width:800px){
+
 
 }
