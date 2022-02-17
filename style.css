@@ -1,0 +1,264 @@
+/***********************GENERICS**********************/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-white{
+    color:white;
+}
+
+.text-grey{
+    color:#a3a3a3;
+}
+/*************************************************FULL-PAGE*******************************************************/
+.full-page{
+    height:100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+/*************************CONTENITORE-TOP***********************************/
+.contenitore-top{
+    height:calc(100vh - 80px);  /*80px è l'altezza del footer*/
+    display:flex;
+    flex-grow:1;
+}
+/************CONTENITORE-SINISTRO********************/
+.contenitore-sinistro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:250px;
+    /*border:1px dashed red;*/
+    background-color: #000000;
+    padding:0px 50px 10px 20px;
+    font-size: 15px;
+}
+
+.contenitore-sinistro .logo img{
+    width:70%;
+}
+
+.contenitore-sinistro ul{
+    list-style-type: none;
+    margin-top:10%;
+    margin-bottom: 50%;
+}
+
+.contenitore-sinistro ul li{
+    margin-top:1%;
+    margin-bottom:10%;
+}
+
+.contenitore-sinistro li a{
+    text-decoration: none;
+}
+
+.contenitore-sinistro li a:hover{
+    color:white;
+}
+
+.contenitore-sinistro li span:hover,.contenitore-sinistro li i:hover{
+    color:white;
+}
+
+.contenitore-sinistro img{
+    width:10%;
+}
+
+#installa:hover{
+    color:white;
+}
+/************CONTENITORE-DESTRO********************/
+.contenitore-destro{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    /*border:1px dashed blue;*/
+}
+/***HEADER***/
+header{
+    height: 60px;
+    width:100%;
+    background-color: rgba(0,0,0,0.7);
+    /*border:1px dashed green;*/
+    padding-top:10px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:5;
+}
+
+header button{
+    float:right;
+    padding:10px;
+    margin-right: 2%;
+    background-color: #080b1228;
+    border-radius: 30px;
+    font-size:15px;
+}
+
+header > button:hover{
+    transform: scale(1.2);
+}
+/***MAIN***/
+main{
+    height:calc(100vh - 60px);  /*60px è l'altezza dell'header*/
+    padding-top:60px;
+    background-color: #141922;
+    overflow-y:auto;
+    /*border:1px dashed black;*/
+}
+
+main nav ul{
+    list-style-type: none;
+    padding:0px 230px;
+    margin-bottom: 3%;
+}
+
+main nav ul li{
+    display: inline-block;
+    margin-right:3%;
+    font-size: 15px;
+}
+
+main nav a{
+    text-decoration: none;
+}
+
+main nav a:hover{
+    color:white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.recently-played, .john-doe, .artisti-popolari{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.locandina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    width:calc(100% / 6);
+}
+
+.locandina img:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.informazioni-locandina{
+    margin-top:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recently-played img, .john-doe img, .artisti-popolari img
+{
+    width: 100%;
+}
+
+.helper{
+    position: relative;
+}
+
+.nascosto{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:none;
+}
+
+.nascosto > i{
+    font-size:50px;
+}
+
+.helper:hover > .nascosto{
+    display:block;
+}
+
+.helper:hover > img{
+    opacity: 0.5;
+}
+/*************************CONTENITORE-BOTTOM********************************/
+footer{
+    height:80px;
+    background-color: #282828;
+    display:flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    /*border:1px dashed yellow;*/
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left img{
+    height: 50px;
+    margin-right:3%;
+}
+
+.brano-in-riproduzione{
+    display: flex;
+    flex-direction: column;
+    font-size:10px;
+    margin-right:5%;
+}
+
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.controlli-riproduzione{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+
+.barra-riproduzione{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#barra{
+    width:500px;
+    height: 5px;
+    border-radius:50px;
+    background-color: lightgray;
+    margin:0 10px 0 10px;
+}
+
+#barra hr{
+    width: 150px;
+    height: 5px;
+   border-radius:50px;
+    background-color:brown;
+}
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
